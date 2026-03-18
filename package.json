@@ -1,0 +1,12 @@
+{
+  "name": "quinta-a-fondo-landing",
+  "version": "1.0.0",
+  "description": "Landing page premium para 5ta A Fondo - Venta de motocicletas 100% digital",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

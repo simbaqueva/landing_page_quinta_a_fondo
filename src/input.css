@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-brand-blue font-sans overflow-x-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-yellow rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-yellow text-brand-blue font-racing uppercase tracking-wider px-8 py-4 rounded-sm transition-all duration-300 hover:bg-brand-blue hover:text-white hover:shadow-xl transform hover:-translate-y-1 inline-block text-center shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-blue text-brand-blue font-racing uppercase tracking-wider px-8 py-4 rounded-sm transition-all duration-300 hover:bg-brand-blue hover:text-white transform hover:-translate-y-1 inline-block text-center;
+  }
+
+  .section-title {
+    @apply font-racing text-4xl md:text-5xl lg:text-6xl text-brand-blue uppercase tracking-tight mb-8;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-gray-100 rounded-xl overflow-hidden hover:border-brand-yellow transition-all duration-500 shadow-xl;
+  }
+}
+
+.title-accent {
+  background: linear-gradient(to top, #FEE61D 0%, #FEE61D 35%, transparent 35%, transparent 100%);
+  padding: 0 4px;
+  display: inline;
+}
