@@ -15,9 +15,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        // Tipografías que simulan Swis721 y Humnst777 para un look Racing/Deportivo
-        'racing': ['"Arial Black"', 'Impact', 'sans-serif'],
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'brand-title': ['Archivo', 'sans-serif'], // Aligned with Swis721
+        'brand-racing': ['Kanit', 'sans-serif'], // Aligned with Humnst777
+        'sans': ['Inter', 'sans-serif']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
